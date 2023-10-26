@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="Russian">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="theme-style-mode" content="1"> <!-- 0 == light, 1 == dark -->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/logo/codex.png' %}">
+    <!-- CSS 
+    ============================================ -->
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/feature.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/jquery-ui.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/odometer.css' %}">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    
+    <style>
+        .about-div {
+            display: flex;
+            align-items: center;
+            margin-left: 200px;
+            margin-top: 50px;
+            padding: 50px;
+        }
+
+        .about-image {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .about-description {
+            flex: 2;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body class="template-color-1 nft-body-connect" style="padding-left: 50px; padding-right: 50px;">
+
+    {% block content %}
+    {% endblock %}
+    
+    <script src="{% static 'assets/js/vendor/jquery.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-ui.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/modernizer.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/feather.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/sal.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/particles.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery.style.swicher.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/js.cookie.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/count-down.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/isotop.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/imageloaded.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/backtoTop.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/odometer.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-appear.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/scrolltrigger.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery.custom-file-input.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/savePopup.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/vanilla.tilt.js' %}"></script>
+
+    <!-- main JS -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <!-- Meta Mask  -->
+    <script src="{% static 'assets/js/vendor/web3.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/maralis.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/nft.js' %}"></script>
+
+</body>
+
+</html>

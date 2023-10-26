@@ -1,0 +1,35 @@
+{% load static %}
+<header class="rn-header haeder-default header--sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div>
+                    <a style="padding-left: 50px;" class="logo-light" href="/"><img height="100px" width="100px" src="{% static 'assets/images/logo/codex.png' %}" alt="nft-logo"></a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mainmenu-wrapper" style="padding-top: 13px;">
+                    <nav id="sideNav" class="mainmenu-nav d-none d-xl-block">
+                        <ul class="mainmenu">
+                            <li class="">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'about' %}">О нас</a>
+                            </li>
+                            <li class="">
+                                <a href="{% url 'service' %}">Услуги</a>
+                            </li>
+                            <li class="">
+                                <a href="{% url 'portfolio' %}">Портфолио</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'contact' %}">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
